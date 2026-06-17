@@ -1,0 +1,3 @@
+- [x] README.md 包含项目介绍和功能特性
+- [x] README.md 包含安装和使用说明
+- [x] README.md 包含构建说明

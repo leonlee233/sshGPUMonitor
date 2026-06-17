@@ -1,0 +1,14 @@
+/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/AppDelegate.swift
+/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/GPUMonitorApp.swift
+/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Models/GPUInfo.swift
+/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Models/ServerConfig.swift
+/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/AutoStartManager.swift
+/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/ConfigStore.swift
+/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/KeyFileManager.swift
+/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/SSHManager.swift
+/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/ViewModels/GPUMonitorViewModel.swift
+/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/FloatingWindowController.swift
+/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/GPUBarChartView.swift
+/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/GPUBarView.swift
+/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/MenuBarView.swift
+/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/ServerConfigView.swift

@@ -1,0 +1,499 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.GPUMonitor-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/sources",
+      "importPath" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/GPUMonitorApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Models/GPUInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Models/ServerConfig.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/AutoStartManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/ConfigStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/KeyFileManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/SSHManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/ViewModels/GPUMonitorViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/FloatingWindowController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/GPUBarChartView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/GPUBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/MenuBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/ServerConfigView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "GPUMonitor",
+      "moduleOutputPath" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/Modules/GPUMonitor.swiftmodule",
+      "objects" : [
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/AppDelegate.swift.o",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUMonitorApp.swift.o",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUInfo.swift.o",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/ServerConfig.swift.o",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/AutoStartManager.swift.o",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/ConfigStore.swift.o",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/KeyFileManager.swift.o",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/SSHManager.swift.o",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUMonitorViewModel.swift.o",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/FloatingWindowController.swift.o",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUBarChartView.swift.o",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUBarView.swift.o",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/MenuBarView.swift.o",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/ServerConfigView.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "GPUMonitor_main",
+        "-swift-version",
+        "5",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "gpumonitor"
+      ],
+      "outputFileMapPath" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUMonitorApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/ServerConfig.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/AutoStartManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/ConfigStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/KeyFileManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/SSHManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUMonitorViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/FloatingWindowController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUBarChartView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/MenuBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/ServerConfigView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/Modules/GPUMonitor.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/AppDelegate.swift",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/GPUMonitorApp.swift",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Models/GPUInfo.swift",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Models/ServerConfig.swift",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/AutoStartManager.swift",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/ConfigStore.swift",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/KeyFileManager.swift",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/SSHManager.swift",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/ViewModels/GPUMonitorViewModel.swift",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/FloatingWindowController.swift",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/GPUBarChartView.swift",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/GPUBarView.swift",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/MenuBarView.swift",
+        "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/ServerConfigView.swift"
+      ],
+      "tempsPath" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "GPUMonitor" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "GPUMonitor",
+      "-package-name",
+      "gpumonitor",
+      "-incremental",
+      "-c",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/AppDelegate.swift",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/GPUMonitorApp.swift",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Models/GPUInfo.swift",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Models/ServerConfig.swift",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/AutoStartManager.swift",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/ConfigStore.swift",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/KeyFileManager.swift",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/SSHManager.swift",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/ViewModels/GPUMonitorViewModel.swift",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/FloatingWindowController.swift",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/GPUBarChartView.swift",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/GPUBarView.swift",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/MenuBarView.swift",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/ServerConfigView.swift",
+      "-I",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "GPUMonitor_main",
+      "-swift-version",
+      "5",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "gpumonitor",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "GPUMonitor" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor-entitlement.plist"
+    },
+    "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/GPUMonitorApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Models/GPUInfo.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Models/ServerConfig.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/AutoStartManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/ConfigStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/KeyFileManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Services/SSHManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/ViewModels/GPUMonitorViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/FloatingWindowController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/GPUBarChartView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/GPUBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/MenuBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/Sources/GPUMonitor/Views/ServerConfigView.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/sources"
+    },
+    "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/AutoStartManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/ConfigStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/FloatingWindowController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUBarChartView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUInfo.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUMonitorApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/GPUMonitorViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/KeyFileManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/MenuBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/SSHManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/ServerConfig.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.build/ServerConfigView.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/GPUMonitor.product/Objects.LinkFileList"
+    },
+    "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/leonlee/Documents/trae_projects/ssh_GPU/GPUMonitor/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
