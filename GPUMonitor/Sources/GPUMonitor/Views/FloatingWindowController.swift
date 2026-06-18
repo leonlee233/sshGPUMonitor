@@ -183,4 +183,5 @@ struct ServerPickerView: View {
 
 extension Notification.Name {
     static let showServerConfig = Notification.Name("showServerConfig")
+    static let showSSHError = Notification.Name("showSSHError")
 }

@@ -44,11 +44,11 @@ class SSHManager {
         var arguments = [
             "-o", "StrictHostKeyChecking=no",
             "-o", "ConnectTimeout=5",
-            "-o", "BatchMode=yes",
             "-p", "\(config.port)"
         ]
 
         if config.authType == .key {
+            arguments += ["-o", "BatchMode=yes"]
             var keyPath: String?
             if let bookmark = config.keyBookmark {
                 keyPath = keyFileManager.startAccessing(bookmark: bookmark)
@@ -66,6 +66,25 @@ class SSHManager {
 
         process.standardOutput = outputPipe
         process.standardError = errorPipe
+
+        var askpassScriptURL: URL?
+        if config.authType == .password && !config.password.isEmpty {
+            let tempDir = FileManager.default.temporaryDirectory
+            let scriptURL = tempDir.appendingPathComponent("ssh_askpass_\(UUID().uuidString).sh")
+            let script = "#!/bin/sh\necho '\(config.password.replacingOccurrences(of: "'", with: "'\\''"))'"
+            try? script.write(to: scriptURL, atomically: true, encoding: .utf8)
+            try? FileManager.default.setAttributes([.posixPermissions: 0o700], ofItemAtPath: scriptURL.path)
+            askpassScriptURL = scriptURL
+
+            process.environment = [
+                "SSH_ASKPASS": scriptURL.path,
+                "SSH_ASKPASS_REQUIRE": "force",
+                "DISPLAY": ":0",
+                "HOME": NSHomeDirectory()
+            ]
+        } else {
+            process.environment = ["HOME": NSHomeDirectory()]
+        }
 
         var outputData = Data()
         var errorData = Data()
@@ -85,6 +104,10 @@ class SSHManager {
 
         outputData.append(outputPipe.fileHandleForReading.readDataToEndOfFile())
         errorData.append(errorPipe.fileHandleForReading.readDataToEndOfFile())
+
+        if let url = askpassScriptURL {
+            try? FileManager.default.removeItem(at: url)
+        }
 
         if process.terminationStatus != 0 {
             let errorMsg = String(data: errorData, encoding: .utf8)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "Unknown error"

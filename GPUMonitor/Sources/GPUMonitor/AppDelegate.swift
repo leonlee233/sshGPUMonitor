@@ -7,6 +7,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var floatingWindowController: FloatingWindowController!
     var viewModel: GPUMonitorViewModel!
     private var cancellable: AnyCancellable?
+    private var alertedServers: Set<UUID> = []
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         viewModel = GPUMonitorViewModel()
@@ -39,6 +40,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             self?.showServerConfig()
         }
 
+        NotificationCenter.default.addObserver(
+            forName: .showSSHError,
+            object: nil,
+            queue: .main
+        ) { [weak self] notification in
+            if let userInfo = notification.userInfo,
+               let message = userInfo["message"] as? String,
+               let serverId = userInfo["serverId"] as? UUID {
+                self?.handleSSHError(message: message, serverId: serverId)
+            }
+        }
+
         if viewModel.servers.isEmpty {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
                 self?.showServerConfig()
@@ -59,18 +72,33 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func showServerConfig() {
         let configWindow = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 350, height: 320),
+            contentRect: NSRect(x: 0, y: 0, width: 400, height: 350),
             styleMask: [.titled, .closable],
             backing: .buffered,
             defer: false
         )
         configWindow.center()
-        configWindow.title = "Server Configuration"
+        configWindow.title = "Server Management"
         configWindow.isReleasedWhenClosed = false
-        configWindow.contentView = NSHostingView(rootView: ServerConfigView(viewModel: viewModel, onClose: { [weak configWindow] in
+        configWindow.contentView = NSHostingView(rootView: ServerListView(viewModel: viewModel, onClose: { [weak configWindow] in
             configWindow?.close()
         }))
         configWindow.makeKeyAndOrderFront(nil)
         NSApp.activate(ignoringOtherApps: true)
+    }
+
+    private func handleSSHError(message: String, serverId: UUID) {
+        if alertedServers.contains(serverId) { return }
+        alertedServers.insert(serverId)
+        showSSHError(message)
+    }
+
+    private func showSSHError(_ message: String) {
+        let alert = NSAlert()
+        alert.messageText = "SSH Connection Error"
+        alert.informativeText = message
+        alert.alertStyle = .warning
+        alert.addButton(withTitle: "OK")
+        alert.runModal()
     }
 }

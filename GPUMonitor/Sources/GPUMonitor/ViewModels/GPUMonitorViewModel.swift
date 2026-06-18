@@ -27,6 +27,7 @@ class GPUMonitorViewModel: ObservableObject {
     private var pollingTimer: Timer?
     private var autoPollingTask: Task<Void, Never>?
     private var autoPollingIndex: Int = 0
+    private var alertedServers: Set<UUID> = []
 
     var servers: [ServerConfig] {
         configStore.servers
@@ -86,6 +87,7 @@ class GPUMonitorViewModel: ObservableObject {
         gpus = []
         isConnected = false
         currentPollingServerName = ""
+        alertedServers.removeAll()
     }
 
     func startAutoPolling() {
@@ -147,6 +149,7 @@ class GPUMonitorViewModel: ObservableObject {
         guard let config = selectedServer else { return }
 
         let manager = sshManager
+        let serverId = config.id
         Task {
             do {
                 let gpuData = try await manager.fetchGPUInfo(config: config)
@@ -154,11 +157,20 @@ class GPUMonitorViewModel: ObservableObject {
                     self?.gpus = gpuData
                     self?.isConnected = true
                     self?.errorMessage = nil
+                    self?.alertedServers.remove(serverId)
                 }
             } catch {
                 await MainActor.run { [weak self] in
                     self?.isConnected = false
                     self?.errorMessage = error.localizedDescription
+                    if let self = self, !self.alertedServers.contains(serverId) {
+                        self.alertedServers.insert(serverId)
+                        NotificationCenter.default.post(
+                            name: .showSSHError,
+                            object: nil,
+                            userInfo: ["message": error.localizedDescription, "serverId": serverId]
+                        )
+                    }
                 }
             }
         }
@@ -166,17 +178,27 @@ class GPUMonitorViewModel: ObservableObject {
 
     private func fetchGPUDataForServer(_ config: ServerConfig) async {
         let manager = sshManager
+        let serverId = config.id
         do {
             let gpuData = try await manager.fetchGPUInfo(config: config)
             await MainActor.run { [weak self] in
                 self?.gpus = gpuData
                 self?.isConnected = true
                 self?.errorMessage = nil
+                self?.alertedServers.remove(serverId)
             }
         } catch {
             await MainActor.run { [weak self] in
                 self?.isConnected = false
                 self?.errorMessage = error.localizedDescription
+                if let self = self, !self.alertedServers.contains(serverId) {
+                    self.alertedServers.insert(serverId)
+                    NotificationCenter.default.post(
+                        name: .showSSHError,
+                        object: nil,
+                        userInfo: ["message": error.localizedDescription, "serverId": serverId]
+                    )
+                }
             }
         }
     }
